@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noé Goncalves de Veiga — BUT Informatique</title>
+  <meta name="description" content="Portfolio de Noé Goncalves de Veiga, étudiant en BUT3 Informatique à l'IUT de Villetaneuse. Recherche une alternance 2026-2027.">
+  
+  <!-- Ajout des métadonnées Open Graph pour les réseaux sociaux et Discord -->
+  <meta property="og:title" content="Noé Goncalves de Veiga — BUT Informatique">
+  <meta property="og:description" content="Portfolio de Noé Goncalves de Veiga, étudiant en BUT3 Informatique à l'IUT de Villetaneuse. Recherche une alternance 2026-2027.">
+  <meta property="og:type" content="website">
+  <!-- Pense à créer une image de 1200x630px et à la placer dans ton dossier -->
+  <meta property="og:image" content="apercu-portfolio.jpg"> 
+  
+  <!-- Ajout d'une favicon (crée un petit logo au format SVG ou PNG) -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Menu de navigation ===== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#accueil" class="logo">NG<span>.</span></a>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-liens">
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Accueil ===== -->
+  <header id="accueil" class="hero">
+    <div class="cadre hero-layout">
+      
+      <!-- COLONNE GAUCHE : Texte et boutons -->
+      <div class="hero-texte">
+        <span class="badge"><span class="pulse"></span>Disponible — alternance 2026-2027</span>
+        <h1>Noé<br>Goncalves <em>de Veiga</em></h1>
+        <p class="sous-titre">
+          Étudiant en <strong>BUT3 Informatique</strong> à l'IUT de Villetaneuse
+          (Université Sorbonne Paris Nord). Je développe en Python, Java et pour le web,
+          et je cherche une entreprise pour un rythme
+          <strong>2 semaines entreprise / 2 semaines IUT</strong> dès la rentrée 2026.
+        </p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-plein">Voir mes projets</a>
+          <a href="https://github.com/Noe-gdv95" target="_blank" rel="noopener" class="btn btn-ligne">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/no%C3%A9-goncalves-de-veiga-3a77433a9/" target="_blank" rel="noopener" class="btn btn-ligne">LinkedIn ↗</a>
+        </div>
+        
+        <ul class="hero-chiffres">
+          <li><b>BUT3</b><span>année en cours</span></li>
+          <li><b>2</b><span>stages chez OGF</span></li>
+          <li><b>IDF</b><span>mobile, basé à Groslay (95)</span></li>
+        </ul>
+      </div>
+
+      <!-- COLONNE DROITE : Faux IDE de code -->
+      <div class="hero-visuel">
+        <div class="code-window">
+          <div class="code-header">
+            <span class="dot rouge"></span>
+            <span class="dot jaune"></span>
+            <span class="dot vert"></span>
+            <span class="nom-fichier">profil_noe.py</span>
+          </div>
+          <div class="code-body">
+<pre><code><span class="c-kw">class</span> <span class="c-class">Alternant</span>:
+    <span class="c-kw">def</span> <span class="c-func">__init__</span>(<span class="c-arg">self</span>):
+        <span class="c-arg">self</span>.nom = <span class="c-str">"Noé Goncalves De Veiga"</span>
+        <span class="c-arg">self</span>.profil = <span class="c-str">"Développeur"</span>
+        <span class="c-arg">self</span>.rythme = <span class="c-str">"2 sem / 2 sem"</span>
+        <span class="c-arg">self</span>.tech = [<span class="c-str">"Python"</span>, <span class="c-str">"Java"</span>]
+
+    <span class="c-kw">def</span> <span class="c-func">est_disponible</span>(<span class="c-arg">self</span>):
+        <span class="c-kw">return</span> True <span class="c-com"># Rentrée 2026 !</span></code></pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Expérience ===== -->
+    <section id="experience">
+      <div class="cadre">
+        <p class="etiquette">01 — Parcours</p>
+        <h2>Expérience</h2>
+
+        <div class="chrono">
+          <article class="etape">
+            <div class="etape-marque"></div>
+            <div class="etape-corps">
+              <header>
+                <h3>Stage — Automatisation de processus</h3>
+                <span class="periode">2026 · 8 semaines</span>
+              </header>
+              <p class="entreprise">OGF — Omnium de Gestion et de Financement</p>
+              <ul>
+                <li>Création de flux d'automatisation avec Power Automate pour simplifier des tâches répétitives internes</li>
+                <li>Développement d'applications métier avec Power Apps</li>
+                <li>Découverte de l'environnement Microsoft Power Platform en entreprise</li>
+              </ul>
+              <div class="tags">
+                <span>Power Automate</span><span>Power Apps</span><span>Power Platform</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="etape">
+            <div class="etape-marque"></div>
+            <div class="etape-corps">
+              <header>
+                <h3>Services généraux</h3>
+                <span class="periode">Août – sept. 2025</span>
+              </header>
+              <p class="entreprise">OGF — Omnium de Gestion et de Financement</p>
+              <ul>
+                <li>Gestion et distribution des fournitures et du matériel aux différents services</li>
+                <li>Participation à l'aménagement des locaux (réorganisation de bureaux, déménagements internes)</li>
+                <li>Réalisation de petits travaux d'entretien</li>
+              </ul>
+              <div class="tags">
+                <span>Autonomie</span><span>Responsable</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="etape">
+            <div class="etape-marque"></div>
+            <div class="etape-corps">
+              <header>
+                <h3>Employé polyvalent</h3>
+                <span class="periode">Juil. – août 2024</span>
+              </header>
+              <p class="entreprise">Carrefour</p>
+              <ul>
+                <li>Mise en rayon et gestion des stocks</li>
+                <li>Maintien de la propreté et de l'ordre dans les rayons</li>
+                <li>Travail en équipe dans un environnement exigeant</li>
+              </ul>
+              <div class="tags">
+                <span>Ponctualité</span><span>Esprit d'équipe</span><span>Calme</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projets ===== -->
+    <section id="projets">
+      <div class="cadre">
+        <p class="etiquette">02 — Réalisations</p>
+        <h2>Projets</h2>
+
+        <div class="projets-grille">
+          <article class="projet">
+            <div class="projet-num">P.01</div>
+            <img src="img/supervision.png" alt="Aperçu du dashboard de supervision" class="projet-image">
+            <h3>Supervision musicale</h3>
+            <p class="projet-cadre">Projet perso / BUT2 — Python</p>
+            <p class="projet-resume">
+              Système de supervision pour de la diffusion musicale en continu sur plusieurs
+              sites : un serveur central, des lecteurs distants et un tableau de bord pour
+              tout surveiller en temps réel.
+            </p>
+            <ul>
+              <li>Serveur Flask : API REST + base SQLite (lecteurs, playlist, alertes, historique)</li>
+              <li>Heartbeat des lecteurs ; sans réponse pendant 30 secondes, passage en KO et alerte générée</li>
+              <li>Mode hors-ligne : en cas de coupure réseau, le lecteur continue sa playlist locale puis se reconnecte seul</li>
+              <li>Playlist centralisée mise à jour automatiquement au heartbeat suivant</li>
+              <li>Messages urgents diffusés depuis le dashboard vers tous les lecteurs actifs</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Flask</span><span>SQLite</span><span>API REST</span><span>HTML/JS</span>
+            </div>
+            <a class="lien-depot" href="https://github.com/Noe-gdv95/projet-systeme-supervision" target="_blank" rel="noopener">Code source ↗</a>
+          </article>
+
+          <article class="projet">
+            <div class="projet-num">P.02</div>
+            <img src="img/analyse.png" alt="Graphique d'analyse de données" class="projet-image">
+            <h3>Analyse de données</h3>
+            <p class="projet-cadre">SAE — IUT de Villetaneuse — Jupyter</p>
+            <p class="projet-resume">
+              SAE réalisée dans le cadre du BUT : partir d'un dataset brut et en tirer des
+              conclusions utilisables, avec plusieurs livrables à rendre.
+            </p>
+            <ul>
+              <li>Exploration du dataset sous Jupyter Notebook : structure, valeurs manquantes, incohérences</li>
+              <li>Nettoyage et traitement des données pour obtenir une base exploitable</li>
+              <li>Visualisations graphiques pour faire ressortir les tendances</li>
+              <li>Livrables : notebook commenté, tableau récapitulatif, rapport d'aide à la décision</li>
+              <li>Présentation des résultats à l'oral avec un support PowerPoint</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Jupyter</span><span>Data viz</span>
+            </div>
+            <a class="lien-depot" href="https://github.com/Noe-gdv95/projets-ecole" target="_blank" rel="noopener">Code source ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Compétences ===== -->
+    <section id="competences">
+      <div class="cadre">
+        <p class="etiquette">03 — Boîte à outils</p>
+        <h2>Compétences</h2>
+
+        <div class="comp-lignes">
+          <div class="comp-ligne">
+            <h3>Langages</h3>
+            <div class="tags grands">
+              <span>Python</span><span>Java</span><span>C</span><span>SQL</span>
+            </div>
+          </div>
+          <div class="comp-ligne">
+            <h3>Web</h3>
+            <div class="tags grands">
+              <span>HTML / CSS</span><span>JavaScript</span><span>PHP</span><span>Flask</span>
+            </div>
+          </div>
+          <div class="comp-ligne">
+            <h3>Outils &amp; environnements</h3>
+            <div class="tags grands">
+              <span>Linux</span><span>SQLite</span><span>VS Code</span><span>Git / GitHub</span><span>Power Automate</span><span>Power Apps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Formation ===== -->
+    <section id="formation">
+      <div class="cadre">
+        <p class="etiquette">04 — Cursus</p>
+        <h2>Formation</h2>
+
+        <ul class="cursus">
+          <li>
+            <span class="annee">2026 – 2027</span>
+            <div>
+              <b>BUT3 Informatique</b>
+              <span class="etab">IUT Villetaneuse / Université Sorbonne Paris Nord (93)</span>
+            </div>
+          </li>
+          <li>
+            <span class="annee">2025 – 2026</span>
+            <div>
+              <b>BUT2 Informatique</b>
+              <span class="etab">IUT Villetaneuse / Université Sorbonne Paris Nord (93)</span>
+            </div>
+          </li>
+          <li>
+            <span class="annee">2023 – 2025</span>
+            <div>
+              <b>Licence Informatique</b>
+              <span class="etab">Université Sorbonne Paris Nord, Villetaneuse (93)</span>
+            </div>
+          </li>
+          <li>
+            <span class="annee">2022 – 2023</span>
+            <div>
+              <b>Bac général, options Maths / SVT — mention AB</b>
+              <span class="etab">Lycée Camille Saint-Saëns, Deuil-la-Barre (95)</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <div class="cadre">
+        <p class="etiquette">05 — Discutons</p>
+        <h2>Contact</h2>
+
+        <div class="contact-bloc">
+          <p class="contact-accroche">
+            Une alternance à proposer ? Rythme <strong>2 semaines entreprise / 2 semaines IUT</strong>
+            à partir de la rentrée 2026, idéalement signée d'ici novembre-décembre.
+            Basé à Groslay (95), mobile en Île-de-France.
+          </p>
+          <div class="contact-cartes">
+            <a href="mailto:noegdv27@gmail.com" class="contact-carte">
+              <span class="contact-type">mail</span>
+              <span class="contact-valeur">noegdv27@gmail.com</span>
+            </a>
+            <a href="tel:0627334863" class="contact-carte">
+              <span class="contact-type">téléphone</span>
+              <span class="contact-valeur">06 27 33 48 63</span>
+            </a>
+            <a href="https://github.com/Noe-gdv95" target="_blank" rel="noopener" class="contact-carte">
+              <span class="contact-type">github</span>
+              <span class="contact-valeur">Noe-gdv95 ↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/no%C3%A9-goncalves-de-veiga-3a77433a9/" target="_blank" rel="noopener" class="contact-carte">
+              <span class="contact-type">linkedin</span>
+              <span class="contact-valeur">Noé Goncalves ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="cadre">
+      <span>Noé Goncalves de Veiga — 2026</span>
+      <a href="#accueil">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
